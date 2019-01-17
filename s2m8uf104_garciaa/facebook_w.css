@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebed;
+}
+
+#barra {
+  height: 43px;
+  background-color: #5066ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#contingut {
+  width: 852px;
+  height: 1819px;
+
+  margin: auto;
+}
+
+#contingut #cap {
+  width: 852px;
+  height: 358px;
+  margin: auto;
+  background-image: url(img/portada.jpg);
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+#contingut #cap img{
+  position: relative;
+  top: 160px;
+  left: 21px;
+  border-radius: 50%;
+  border: solid white;
+  box-shadow: 2px 2px 2px #666666;
+}
+
+#contingut #cap h2 {
+  font-family: helvetica;
+  position: relative;
+  top: 70px;
+  left: 230px;
+  color: white;
+  text-shadow: 1px 1px 1px #666666
+
+}
+
+#contingut #menu{
+  height: 43px;
+  width: 498px;
+  background-color: grey;
+  float: right;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 69px;
+}
+
+li {
+  float: left;
+  margin: 0 1px 0 0;
+  list-style-type: none;
+  display: block;
+  height: 43px;
+  padding: 0 15px;
+  background-color: white;
+  line-height: 43px;
+
+}
+
+#principal {
+
+}
+
+.esquerra {
+  height: 200px;
+  width: 322px;
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #DDD;
+  margin-top: 12px;
+}
+
+#fotos {
+  background-color: red;
+}
