@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e9ebed;
+  font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
 }
 
 #barra {
@@ -53,13 +54,13 @@ body {
 
 #contingut #menu{
   height: 43px;
-  width: 498px;
+  width: 546px;
   background-color: grey;
   float: right;
   padding: 0;
   margin: 0;
   position: relative;
-  top: 69px;
+  top: 70px;
 }
 
 li {
@@ -78,15 +79,36 @@ li {
 
 }
 
+
+#seccions {
+  width: 322px;
+  float: left;
+  overflow: hidden;
+}
 .esquerra {
   height: 200px;
   width: 322px;
+}
+
+#fotos {
+  background-color: brown;
+}
+
+.dreta {
+  height: 400px;
+  width: 516px;
+
+  float: right;
+  clear: right;
+}
+
+.esquerra, .dreta {
   background-color: white;
   border-radius: 3px;
   border: solid 1px #DDD;
   margin-top: 12px;
 }
 
-#fotos {
-  background-color: red;
+#presentacio {
+
 }
