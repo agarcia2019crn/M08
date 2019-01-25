@@ -1,0 +1,184 @@
+body {
+  background-color: #222;
+  font-style: helvetica, sans-serif;
+}
+
+#menu {
+  background-image: url(img/logo.png);
+  background-repeat: no-repeat;
+  color: #FFF;
+  margin: 5px 20px;
+  z-index: 1000;
+}
+
+#barra {
+  height: 50px;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  }
+
+#menu #esquerra {
+  display: block;
+  height: 50px;
+  margin-left: 150px;
+  padding: 0;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1000;
+
+  }
+
+#menu #dreta{
+  display: block;
+  height: 50px;
+  padding: 0;
+  position: relative;
+  float:right;
+  margin-top: -65px;
+  z-index: 1000;
+}
+
+#menu li {
+  float: left;
+  list-style-type: none;
+  display: block;
+  height: 50px;
+  padding: 0 5px;
+}
+
+#documentals h1{
+  margin-left: 20px;
+  font-style: helvetica, sans-serif;
+  color: #FFF;
+}
+
+#documentals .peli {
+  width: 175px;
+  height: 300px;
+  margin: 20px;
+  float: left;
+  border-radius: 5px;
+  line-height: 550px;
+  color: #fff;
+}
+
+.peli:hover {
+  background-color: black;
+  opacity: 0.8;
+}
+
+#un {
+  background-image: url(img/u.jpg);
+  background-repeat: no-repeat;
+}
+
+#dos {
+  background-image: url(img/dos.jpg);
+  background-repeat: no-repeat;
+}
+
+#tres {
+  background-image: url(img/tres.jpg);
+  background-repeat: no-repeat;
+}
+
+#quatre {
+  background-image: url(img/quatre.jpg);
+  background-repeat: no-repeat;
+}
+
+#cinc {
+  background-image: url(img/cinc.jpg);
+  background-repeat: no-repeat;
+}
+
+#sis {
+  background-image: url(img/sis.jpg);
+  background-repeat: no-repeat;
+}
+
+#set {
+  background-image: url(img/set.jpg);
+  background-repeat: no-repeat;
+}
+
+#vuit {
+  background-image: url(img/vuit.jpg);
+  background-repeat: no-repeat;
+}
+
+#nou {
+  background-image: url(img/nou.jpg);
+  background-repeat: no-repeat;
+}
+
+#deu {
+  background-image: url(img/deu.jpg);
+  background-repeat: no-repeat;
+}
+
+#onze {
+  background-image: url(img/onze.jpg);
+  background-repeat: no-repeat;
+}
+
+.peli h2 {
+  font-size: 15px;
+  margin-top: 0;
+  font-style: helvetica, sans-serif;
+}
+
+#vistos h1 {
+  margin-left: 20px;
+  font-style: helvetica, sans-serif;
+  color: #FFF;
+}
+
+#vistos {
+  float: left;
+  list-style-type: none;
+  display: block;
+  margin-top: 325px;
+  margin-left: -650px;
+  height: 50px;
+  padding: 0 5px;
+  -webkit-filter:grayscale(100%);
+  -moz-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+#vistos .peli {
+  width: 175px;
+  height: 300px;
+  margin: 20px;
+  float: left;
+  border-radius: 5px;
+  line-height: 550px;
+  color: #fff;
+}
+
+ #vista1 {
+  background-image: url(img/dotze.jpg);
+  background-repeat: no-repeat;
+}
+
+#vista2{
+ background-image: url(img/tretze.jpg);
+ background-repeat: no-repeat;
+}
+
+#vista3 {
+ background-image: url(img/catorze.jpg);
+ background-repeat: no-repeat;
+}
+
+
+#vista4 {
+ background-image: url(img/quinze.jpg);
+ background-repeat: no-repeat;
+}
