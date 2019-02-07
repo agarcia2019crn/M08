@@ -506,7 +506,12 @@
 
 
   .dreta {
-
+    width: 100%
+    float: none;
+    clear: none;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px grey;
   }
 
   .esquerra, .dreta {
@@ -549,173 +554,182 @@
   #surprise h3 {
 
   }
-
-  #amistats h3 {
-
-
+  #amistats, #fotos {
+    display: none;
   }
-
-  #amistats ul {
-
-
-  }
-
-  #amistats li {
-
-
-  }
-
-  #amistats li a:link{
-
-  }
-
-  #amistats a:visited{
-
-  }
-
-  #amistats  #YR {
-
-  }
-
-  #amistats  #MM {
-
-  }
-
-  #amistats  #SG {
-
-  }
-
-  #amistats  #SF {
-
-  }
-
-  #amistats  #NC {
-
-  }
-
-  #amistats  #VH {
-
-  }
-
-  #amistats  #SP {
-
-  }
-
-  #amistats  #AC {
-
-  }
-
-  #amistats  #SM {
-
-  }
-
-
-  #fotos h3 {
-
-
-  }
-
-  #fotos ul {
-
-
-  }
-
-  #fotos li {
-
-  }
-
   .F1 {
-
+    background-image: url(img/foto2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   #surprise h3 {
-
+    background-position: 0px -72px;
   }
 
   #post1 li {
-
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
   }
 
   #post1 h4 {
-
+    display: inline;
+    padding: 12px;
   }
 
   #post1 ul {
-
+    height: 48px;
+    background-color: #F5F5F7;
+    padding: 0;
+    margin: 0;
   }
 
   #pensament {
-
+    display: block;
+    clear: left:
+    padding: 12px;
+    position: relative;
+    left: -12px;
+    height: 71px;
+    width: 100%;
+    font-size: 1.5em;
+    margin-left: 65px;
+    border: 0;
+    color: silver;
   }
 
   #pensament input {
-
+    width: 90%;
   }
 
   #botonera_estat {
-
+      height: 38px;
+      width:100%;
+      background-color: #F5F5F7;
+      margin: 0 0 0 1px;
+      overflow: hidden;
+      padding: 0 10px;
+      line-height: 38px;
+      display: inline;
+      position: relative;
+      left: -12px;
   }
 
   #botonera_estat li {
-
+      list-style: none;
+      height: 28px;
+      margin: 0 0 0 1px;
+      padding: 0 10px;
+      font-size: 11px;
+      line-height: 38px;
+      float: left;
+      position: relative;
+      background-color: #f5f5f7;
+      border-radius: 13px;
+      text-indent: 24px;
 
   }
 
   #crear {
-
+    background-image: url(img/icones/lapiz.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #video {
-
+    background-image: url(img/icones/camara.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #directo {
-
+    background-image: url(img/icones/camara.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #imp {
-
+    background-image: url(img/icones/bandera.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #estat_fotovideo {
-
+    background-image: url(img/icones/foto.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #estat_etiquetar {
-
+    background-image: url(img/icones/etiquetar.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #estat_sentiment {
-
+    background-image: url(img/icones/sonrisa.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
   }
 
   #botonera_estat li:hover{
-
+    opacity: 0.5
   }
 
   #crear li{
-
+    background-color: #f5f5f7;
+    text-indent: 24px;
   }
 
 
   #post2 h6{
-
+    text-indent: 20px;
+    background-image: url(img/.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    background-position: 0px -4px;
+    border-bottom: 1px solid grey;
 
   }
   #post2 ul {
-
+    width: 100%;
+    overflow: hidden;
   }
 
   #post2 ul li{
-
+    display: list-item;
+    list-style-image: url(img/.png);
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
   }
 
   #post2 input {
-
+    display: block;
+    clear: both;
+    background-color: #e9ebed;
+    border: solid grey 1px;
+    border-radius: 24px;
+    line-height: 2em;
+    padding: 8px;
+    font-size: 0.9em;
+    margin-left: 45px;
+    width: 87%;
   }
 
   #post2 #miniperfil {
-
+    background-size: 60px 60px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 40px;
+    left 0px;
+    border-radius: 20px;
+    z-index: 900;
   }
 
 
@@ -724,18 +738,18 @@
   }
 
   #comenta{
-
+    list-style-type: url(img/.png);
   }
 
   #comparte{
-
+    list-style-type: url(img/.png);
   }
 
   #puntos{
-
+    list-style-type: none;
   }
 
   a {
-
+    text-decoration: none;
   }
 }
