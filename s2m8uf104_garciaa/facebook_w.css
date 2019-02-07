@@ -1,442 +1,740 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #e9ebed;
-  font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
-}
+/* Versió escriptori */
+@media only screen and (min-width: 960px){
 
-#barra {
-  height: 43px;
-  background-color: #5066ae;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9ebed;
+    font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
+  }
 
-#contingut {
-  width: 852px;
-  margin: auto;
-  overflow: hidden;
-}
+  #barra {
+    height: 43px;
+    background-color: #5066ae;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
 
-#contingut #cap {
-  width: 852px;
-  height: 358px;
-  margin: auto;
-  background-image: url(img/portada.jpg);
-  background-repeat: no-repeat;
-  background-color: white;
-  border: 1px solid #DDD;
-  border-radius: 3px;
-  margin-bottom: 12px;
-}
-
-#contingut #cap img{
-  position: relative;
-  top: 160px;
-  left: 21px;
-  border-radius: 50%;
-  border: solid white;
-  box-shadow: 2px 2px 2px #666666;
-}
-
-#contingut #cap H3 {
-  font-family: helvetica;
-  position: relative;
-  top: 70px;
-  left: 230px;
-  color: white;
-  text-shadow: 1px 1px 1px #666666
-
-}
-
-#contingut #menu{
-  height: 43px;
-  width: 546px;
-  background-color: grey;
-  float: right;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  top: 80px;
-}
-
-#menu li {
-  float: left;
-  margin: 0 1px 0 0;
-  list-style-type: none;
-  display: block;
-  height: 43px;
-  padding: 0 15px;
-  background-color: white;
-  line-height: 43px;
-
-}
-
-#principal {
-overflow: hidden;
-}
-
-
-#seccions {
-  width: 298px;
-  float: left;
-  overflow: hidden;
-}
-
-
-.dreta {
-
-  width: 516px;
-  float: right;
-  clear: right;
-
-}
-
-.esquerra, .dreta {
-  background-color: white;
-  border-radius: 3px;
-  border: solid 1px #DDD;
-  margin-top: 12px;
-  overflow: hidden;
-  font-size: 12px;
-  padding: 12px;
-}
-
-#seccions h3 {
-  text-indent: 30px;
-  background-image: url(img/lateral.png);
-  background-repeat: no-repeat;
-  background-position: 0 -24px;
-  height: 21px;
-  padding-top: 3px;
-}
-
-#presentacio h3 {
-  background-position: 0px 0px;
-
-}
-#presentacio p{
-border-bottom: solid 1px #DDD;
-padding-bottom: 0 0 10px 0;
-
-}
-
-#presentacio .estudis {
-list-style-image: url(img/icones/estudis.png);
-}
-
-#presentacio .domicili {
-list-style-image: url(img/icones/domicili.png);
-}
-
-#presentacio .feina {
-list-style-image: url(img/icones/feina.png);
-}
-
-#surprise h3 {
-  background-position: 0px -72px;
-}
-
-#amistats h3 {
-  background-position: 0px -48px;
-
-}
-
-#amistats ul {
-  padding: 0;
-
-}
-
-#amistats li {
-  width: 86px;
-  height: 86px;
-  margin: 2px;
-  float: left;
-  list-style-type: none;
-  padding: 0;
-  position: relative;
-  background-size: 100%;
-
-}
-
-#amistats li a:link{
-  display: block;
-  color:white;
-  text-decoration: none;
-  position: absolute;
-  bottom: 0;
-  height: 86px;
-  width: 86px;
-}
-
-#amistats a:visited{
-  color:white;
-  text-decoration: none;
-}
-
-#amistats  #YR {
-background-size: cover;
-background-image: url(https://yromero2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/perfil1.jpg);
-}
-
-#amistats  #MM {
-background-size: cover;
-background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
-}
-
-#amistats  #SG {
-background-size: cover;
-background-image: url(https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg);
-}
-
-#amistats  #SF {
-background-size: cover;
-background-image: url(https://sfernandez2019crn.github.io/M08/s2m8uf104_fernandez/img/gos.png);
-background-color: green;
-}
-
-#amistats  #NC {
-background-size: cover;
-background-image: url(https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg);
-}
-
-#amistats  #VH {
-background-size: cover;
-background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
-}
-
-#amistats  #SP {
-background-size: cover;
-background-image: url(https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg);
-}
-
-#amistats  #AC {
-background-size: cover;
-background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
-}
-
-#amistats  #SM {
-background-size: cover;
-background-image: url(https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg);
-}
-
-
-#fotos h3 {
-  background-position: 0px -24px;
-
-}
-
-#fotos ul {
-  padding: 0;
-
-}
-
-#fotos li {
-  width: 86px;
-  height: 86px;
-  margin: 2px;
-  float: left;
-  list-style-type: none;
-  padding: 0;
-  position: relative;
-  background-size: 100%;
-}
-
-.F1 {
-  background-image: url(img/foto2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#surprise h3 {
-  background-position: 0px -72px;
-}
-
-#post1 li {
-  list-style-type: none;
-  text-decoration: none;
-  display: inline;
-}
-
-#post1 h4 {
-  display: inline;
-  padding: 12px;
-}
-
-#post1 ul {
-  height: 48px;
-  background-color: #F5F5F7;
-  padding: 0;
-  margin: 0;
-}
-
-#pensament {
-  display: block;
-  clear: left:
-  padding: 12px;
-  position: relative;
-  left: -12px;
-  height: 71px;
-  width: 516px;
-  font-size: 1.5em;
-  margin-left: 65px;
-  border: 0;
-  color: silver;
-}
-
-#pensament input {
-  width: 90%;
-}
-
-#botonera_estat {
-    height: 38px;
-    width: 516px;
-    background-color: #F5F5F7;
-    margin: 0 0 0 1px;
+  #contingut {
+    width: 852px;
+    margin: auto;
     overflow: hidden;
-    padding: 0 10px;
-    line-height: 38px;
+  }
+
+  #contingut #cap {
+    width: 852px;
+    height: 358px;
+    margin: auto;
+    background-image: url(img/portada.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    margin-bottom: 12px;
+  }
+
+  #contingut #cap img{
+    position: relative;
+    top: 160px;
+    left: 21px;
+    border-radius: 50%;
+    border: solid white;
+    box-shadow: 2px 2px 2px #666666;
+  }
+
+  #contingut #cap H3 {
+    font-family: helvetica;
+    position: relative;
+    top: 70px;
+    left: 230px;
+    color: white;
+    text-shadow: 1px 1px 1px #666666
+
+  }
+
+  #contingut #menu{
+    height: 43px;
+    width: 546px;
+    background-color: grey;
+    float: right;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 80px;
+  }
+
+  #menu li {
+    float: left;
+    margin: 0 1px 0 0;
+    list-style-type: none;
+    display: block;
+    height: 43px;
+    padding: 0 15px;
+    background-color: white;
+    line-height: 43px;
+
+  }
+
+  #principal {
+  overflow: hidden;
+  }
+
+
+  #seccions {
+    width: 298px;
+    float: left;
+    overflow: hidden;
+  }
+
+
+  .dreta {
+
+    width: 516px;
+    float: right;
+    clear: right;
+
+  }
+
+  .esquerra, .dreta {
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #DDD;
+    margin-top: 12px;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  #seccions h3 {
+    text-indent: 30px;
+    background-image: url(img/lateral.png);
+    background-repeat: no-repeat;
+    background-position: 0 -24px;
+    height: 21px;
+    padding-top: 3px;
+  }
+
+  #presentacio h3 {
+    background-position: 0px 0px;
+
+  }
+  #presentacio p{
+  border-bottom: solid 1px #DDD;
+  padding-bottom: 0 0 10px 0;
+
+  }
+
+  #presentacio .estudis {
+  list-style-image: url(img/icones/estudis.png);
+  }
+
+  #presentacio .domicili {
+  list-style-image: url(img/icones/domicili.png);
+  }
+
+  #presentacio .feina {
+  list-style-image: url(img/icones/feina.png);
+  }
+
+  #surprise h3 {
+    background-position: 0px -72px;
+  }
+
+  #amistats h3 {
+    background-position: 0px -48px;
+
+  }
+
+  #amistats ul {
+    padding: 0;
+
+  }
+
+  #amistats li {
+    width: 86px;
+    height: 86px;
+    margin: 2px;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    background-size: 100%;
+
+  }
+
+  #amistats li a:link{
+    display: block;
+    color:white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    height: 86px;
+    width: 86px;
+  }
+
+  #amistats a:visited{
+    color:white;
+    text-decoration: none;
+  }
+
+  #amistats  #YR {
+  background-size: cover;
+  background-image: url(https://yromero2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/perfil1.jpg);
+  }
+
+  #amistats  #MM {
+  background-size: cover;
+  background-image: url(https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg);
+  }
+
+  #amistats  #SG {
+  background-size: cover;
+  background-image: url(https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg);
+  }
+
+  #amistats  #SF {
+  background-size: cover;
+  background-image: url(https://sfernandez2019crn.github.io/M08/s2m8uf104_fernandez/img/gos.png);
+  background-color: green;
+  }
+
+  #amistats  #NC {
+  background-size: cover;
+  background-image: url(https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg);
+  }
+
+  #amistats  #VH {
+  background-size: cover;
+  background-image: url(https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png);
+  }
+
+  #amistats  #SP {
+  background-size: cover;
+  background-image: url(https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg);
+  }
+
+  #amistats  #AC {
+  background-size: cover;
+  background-image: url(https://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg);
+  }
+
+  #amistats  #SM {
+  background-size: cover;
+  background-image: url(https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg);
+  }
+
+
+  #fotos h3 {
+    background-position: 0px -24px;
+
+  }
+
+  #fotos ul {
+    padding: 0;
+
+  }
+
+  #fotos li {
+    width: 86px;
+    height: 86px;
+    margin: 2px;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    background-size: 100%;
+  }
+
+  .F1 {
+    background-image: url(img/foto2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  #surprise h3 {
+    background-position: 0px -72px;
+  }
+
+  #post1 li {
+    list-style-type: none;
+    text-decoration: none;
     display: inline;
+  }
+
+  #post1 h4 {
+    display: inline;
+    padding: 12px;
+  }
+
+  #post1 ul {
+    height: 48px;
+    background-color: #F5F5F7;
+    padding: 0;
+    margin: 0;
+  }
+
+  #pensament {
+    display: block;
+    clear: left:
+    padding: 12px;
     position: relative;
     left: -12px;
-}
+    height: 71px;
+    width: 516px;
+    font-size: 1.5em;
+    margin-left: 65px;
+    border: 0;
+    color: silver;
+  }
 
-#botonera_estat li {
-    list-style: none;
-    height: 28px;
-    margin: 0 0 0 1px;
-    padding: 0 10px;
-    font-size: 11px;
-    line-height: 38px;
-    float: left;
-    position: relative;
+  #pensament input {
+    width: 90%;
+  }
+
+  #botonera_estat {
+      height: 38px;
+      width: 516px;
+      background-color: #F5F5F7;
+      margin: 0 0 0 1px;
+      overflow: hidden;
+      padding: 0 10px;
+      line-height: 38px;
+      display: inline;
+      position: relative;
+      left: -12px;
+  }
+
+  #botonera_estat li {
+      list-style: none;
+      height: 28px;
+      margin: 0 0 0 1px;
+      padding: 0 10px;
+      font-size: 11px;
+      line-height: 38px;
+      float: left;
+      position: relative;
+      background-color: #f5f5f7;
+      border-radius: 13px;
+      text-indent: 24px;
+
+  }
+
+  #crear {
+    background-image: url(img/icones/lapiz.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #video {
+    background-image: url(img/icones/camara.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #directo {
+    background-image: url(img/icones/camara.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #imp {
+    background-image: url(img/icones/bandera.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #estat_fotovideo {
+    background-image: url(img/icones/foto.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #estat_etiquetar {
+    background-image: url(img/icones/etiquetar.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #estat_sentiment {
+    background-image: url(img/icones/sonrisa.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #botonera_estat li:hover{
+    opacity: 0.5
+  }
+
+  #crear li{
     background-color: #f5f5f7;
-    border-radius: 13px;
     text-indent: 24px;
+  }
+
+
+  #post2 h6{
+    text-indent: 20px;
+    background-image: url(img/.png);
+    background-repeat: no-repeat;
+    height: 16px;
+    background-position: 0px -4px;
+    border-bottom: 1px solid grey;
+
+  }
+  #post2 ul {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #post2 ul li{
+    display: list-item;
+    list-style-image: url(img/.png);
+    float: left;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #post2 input {
+    display: block;
+    clear: both;
+    background-color: #e9ebed;
+    border: solid grey 1px;
+    border-radius: 24px;
+    line-height: 2em;
+    padding: 8px;
+    font-size: 0.9em;
+    margin-left: 45px;
+    width: 87%;
+  }
+
+  #post2 #miniperfil {
+    background-size: 60px 60px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 40px;
+    left 0px;
+    border-radius: 20px;
+    z-index: 900;
+  }
+
+
+  #megusta {
+
+  }
+
+  #comenta{
+    list-style-type: url(img/.png);
+  }
+
+  #comparte{
+    list-style-type: url(img/.png);
+  }
+
+  #puntos{
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
 
 }
 
-#crear {
-  background-image: url(img/icones/lapiz.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+@media only screen and (max-width: 959px){
 
-#video {
-  background-image: url(img/icones/camara.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
+  }
 
-#directo {
-  background-image: url(img/icones/camara.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+  #barra {
+    visibility: hidden;
+  }
 
-#imp {
-  background-image: url(img/icones/bandera.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+  #contingut {
 
-#estat_fotovideo {
-  background-image: url(img/icones/foto.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+  }
 
-#estat_etiquetar {
-  background-image: url(img/icones/etiquetar.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+  #contingut #cap {
+    height: 254px;
+    background-image: url(img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    font-family: helvetica;
 
-#estat_sentiment {
-  background-image: url(img/icones/sonrisa.png);
-  background-repeat: no-repeat;
-  background-position: 6px 6px;
-}
+  }
 
-#botonera_estat li:hover{
-  opacity: 0.5
-}
+  #contingut #cap img{
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    border: solid 4px white;
+    margin-top: 173px;
+  }
 
-#crear li{
-  background-color: #f5f5f7;
-  text-indent: 24px;
-}
+  #contingut #cap H3 {
+    font-size: 25px;
+    font-weight: 200;
+  }
 
+  #contingut #menu{
+    visibility: hidden;
+  }
 
-#post2 h6{
-  text-indent: 20px;
-  background-image: url(img/.png);
-  background-repeat: no-repeat;
-  height: 16px;
-  background-position: 0px -4px;
-  border-bottom: 1px solid grey;
+  #menu li {
 
-}
-#post2 ul {
-  width: 100%;
-  overflow: hidden;
-}
+  }
 
-#post2 ul li{
-  display: list-item;
-  list-style-image: url(img/.png);
-  float: left;
-  margin-left: 30px;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#post2 input {
-  display: block;
-  clear: both;
-  background-color: #e9ebed;
-  border: solid grey 1px;
-  border-radius: 24px;
-  line-height: 2em;
-  padding: 8px;
-  font-size: 0.9em;
-  margin-left: 45px;
-  width: 87%;
-}
-
-#post2 #miniperfil {
-  background-size: 60px 60px;
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  top: 40px;
-  left 0px;
-  border-radius: 20px;
-  z-index: 900;
-}
+  #principal {
+    margin-top: 262px;
+  }
 
 
-#megusta {
+  #seccions {
 
-}
+  }
 
-#comenta{
-  list-style-type: url(img/.png);
-}
 
-#comparte{
-  list-style-type: url(img/.png);
-}
+  .dreta {
 
-#puntos{
-  list-style-type: none;
-}
+  }
 
-a {
-  text-decoration: none;
+  .esquerra, .dreta {
+
+  }
+
+  #seccions h3 {
+
+  }
+
+  #presentacio h3 {
+
+
+  }
+
+  #presentacio li{
+    list-style-type: none;
+    color: grey;
+    width: 60%;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  #presentacio p{
+
+
+  }
+
+  #presentacio .estudis {
+  list-style-image: url(img/icones/estudis.png);
+  }
+
+  #presentacio .domicili {
+  list-style-image: url(img/icones/domicili.png);
+  }
+
+  #presentacio .feina {
+  list-style-image: url(img/icones/feina.png);
+  }
+
+  #surprise h3 {
+
+  }
+
+  #amistats h3 {
+
+
+  }
+
+  #amistats ul {
+
+
+  }
+
+  #amistats li {
+
+
+  }
+
+  #amistats li a:link{
+
+  }
+
+  #amistats a:visited{
+
+  }
+
+  #amistats  #YR {
+
+  }
+
+  #amistats  #MM {
+
+  }
+
+  #amistats  #SG {
+
+  }
+
+  #amistats  #SF {
+
+  }
+
+  #amistats  #NC {
+
+  }
+
+  #amistats  #VH {
+
+  }
+
+  #amistats  #SP {
+
+  }
+
+  #amistats  #AC {
+
+  }
+
+  #amistats  #SM {
+
+  }
+
+
+  #fotos h3 {
+
+
+  }
+
+  #fotos ul {
+
+
+  }
+
+  #fotos li {
+
+  }
+
+  .F1 {
+
+  }
+
+  #surprise h3 {
+
+  }
+
+  #post1 li {
+
+  }
+
+  #post1 h4 {
+
+  }
+
+  #post1 ul {
+
+  }
+
+  #pensament {
+
+  }
+
+  #pensament input {
+
+  }
+
+  #botonera_estat {
+
+  }
+
+  #botonera_estat li {
+
+
+  }
+
+  #crear {
+
+  }
+
+  #video {
+
+  }
+
+  #directo {
+
+  }
+
+  #imp {
+
+  }
+
+  #estat_fotovideo {
+
+  }
+
+  #estat_etiquetar {
+
+  }
+
+  #estat_sentiment {
+
+  }
+
+  #botonera_estat li:hover{
+
+  }
+
+  #crear li{
+
+  }
+
+
+  #post2 h6{
+
+
+  }
+  #post2 ul {
+
+  }
+
+  #post2 ul li{
+
+  }
+
+  #post2 input {
+
+  }
+
+  #post2 #miniperfil {
+
+  }
+
+
+  #megusta {
+
+  }
+
+  #comenta{
+
+  }
+
+  #comparte{
+
+  }
+
+  #puntos{
+
+  }
+
+  a {
+
+  }
 }
