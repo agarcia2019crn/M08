@@ -451,7 +451,7 @@
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     background-color: white;
     font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
   }
@@ -534,9 +534,9 @@
     font-size: 18px;
     margin: 0 auto;
   }
-  #presentacio p{
-
-
+  #presentacio ul{
+margin-top: 50px;
+margin-bottom: 2px;
   }
 
   #presentacio .estudis {
@@ -551,9 +551,14 @@
   list-style-image: url(img/icones/feina.png);
   }
 
-  #surprise h3 {
-
+  #presentacio{
+    padding: 12px;
   }
+
+  #surprise{
+    visibility: hidden;
+  }
+
   #amistats, #fotos {
     display: none;
   }
@@ -568,6 +573,10 @@
     background-position: 0px -72px;
   }
 
+#post1 {
+    height: 160px;
+    margin-top: 2px;
+  }
   #post1 li {
     list-style-type: none;
     text-decoration: none;
@@ -588,14 +597,11 @@
 
   #pensament {
     display: block;
-    clear: left:
-    padding: 12px;
+    clear: left;
     position: relative;
-    left: -12px;
     height: 71px;
     width: 100%;
     font-size: 1.5em;
-    margin-left: 65px;
     border: 0;
     color: silver;
   }
@@ -608,10 +614,7 @@
       height: 38px;
       width:100%;
       background-color: #F5F5F7;
-      margin: 0 0 0 1px;
       overflow: hidden;
-      padding: 0 10px;
-      line-height: 38px;
       display: inline;
       position: relative;
       left: -12px;
@@ -628,8 +631,7 @@
       position: relative;
       background-color: #f5f5f7;
       border-radius: 13px;
-      text-indent: 24px;
-
+      text-indent: 5px;
   }
 
   #crear {
@@ -676,6 +678,10 @@
 
   #botonera_estat li:hover{
     opacity: 0.5
+  }
+
+  .botonera{
+    margin: -10px;
   }
 
   #crear li{
