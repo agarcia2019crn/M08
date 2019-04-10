@@ -121,8 +121,8 @@ body {
 			position: relative;
       margin-top: -0.0px;
 
-      box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
-      border: 0px solid #ff1e00;
+      box-shadow: 0px 0px 1px #CEA97F, 0px 0px 0px #CEA97F;
+      border: 0px solid #CEA97F;
     }
 
     /*  opcional  */
@@ -184,36 +184,10 @@ body {
      visibility:hidden;
     }
 
-    #search {
-      background-color: white;
-      width: 270px;
-      margin-left: 160px;
-      border-radius: 25px;
-      outline: 0;
-      padding-left: 25px;
-      color: #CEA97F;
-    }
-
-      #buscador {
-        height: 20px;
-        width: 300px;
-        border-radius: 25px;
-        top: 10px;
-        left: 1310px;
-        right: 0;
-        z-index: 499;
-        position: relative;
-        opacity: transparent;
-        }
-
-      #buscar {
-        font-family: helvetica, sans-serif;
-        font-size: 15px;
-        margin-left: 20px;
-      }
 
     #salir {
-      margin-left: -1720px;
+      margin-right: 1760px;
+      margin-top: 20px;
     }
 
     #track {
@@ -253,115 +227,119 @@ body {
 
 </style>
 
-<script>
-/* --------------- Js ----------------- */
+  <script>
+  /* --------------- Js ----------------- */
 
-    var reproduint, playpause, barra;
-    var vesa, noutemps;
+      var reproduint, playpause, barra;
+      var vesa, noutemps;
 
-    function inicialitzaReproductor() {
-      reproduint = document.getElementById("reproduint");
-      playpause = document.getElementById("playpause");
-      barra = document.getElementById("barra");
+      function inicialitzaReproductor() {
+        reproduint = document.getElementById("reproduint");
+        playpause = document.getElementById("playpause");
+        barra = document.getElementById("barra");
 
-      playpause.addEventListener("click", playPause, false);
-      barra.addEventListener("change", posicioAudio, false);
-      reproduint.addEventListener("timeupdate", actualitzaTemps, false);
+        playpause.addEventListener("click", playPause, false);
+        barra.addEventListener("change", posicioAudio, false);
+        reproduint.addEventListener("timeupdate", actualitzaTemps, false);
 
-      playpause.focus();
-    }
-
-    window.onload = inicialitzaReproductor;
-
-    function playPause() {
-      if(reproduint.paused) {
-        reproduint.play();
-        playpause.blur();
-      }
-      else {
-        reproduint.pause();
         playpause.focus();
       }
-    }
+
+      window.onload = inicialitzaReproductor;
+
+      function playPause() {
+        if(reproduint.paused) {
+          reproduint.play();
+          playpause.blur();
+        }
+        else {
+          reproduint.pause();
+          playpause.focus();
+        }
+      }
 
 
-    function posicioAudio() {
-      var vesa = parseInt(reproduint.duration * (barra.value / 1000));
-      reproduint.currentTime = vesa;
-      console.log(reproduint.currentTime);
-    }
+      function posicioAudio() {
+        var vesa = parseInt(reproduint.duration * (barra.value / 1000));
+        reproduint.currentTime = vesa;
+        console.log(reproduint.currentTime);
+      }
 
 
-    function actualitzaTemps() {
-      var noutemps = parseInt(reproduint.currentTime * (1000 / reproduint.duration));
-      barra.value = noutemps;
-      console.log(barra.value);
-    }
+      function actualitzaTemps() {
+        var noutemps = parseInt(reproduint.currentTime * (1000 / reproduint.duration));
+        barra.value = noutemps;
+        console.log(barra.value);
+      }
 
-  var cancion=["music/C. Tangana - Pa_ Llamar Tu Atención.mp3","music/Camela - Sueño contigo.mp3", "music/Dua Lipa - New Rules.mp3", "music/Dua Lipa - One Kiss.mp3", "music/Estopa - La Raja de Tu Falda.mp3", "music/Halsey - Without Me.mp3", "music/Imagine Dragons - Natural.mp3", "music/Maldita Nerea - No Pide Tanto, Idiota.mp3", "music/Queen - I Want To Break Free.mp3","music/ROSALÍA - MALAMENTE (Cap.1 Augurio).mp3", "music/Shawn Mendes - There_s Nothing Holdin_ Me Back.mp3"];
+    var cancion=["music/C. Tangana - Pa_ Llamar Tu Atención.mp3","music/Camela - Sueño contigo.mp3", "music/Dua Lipa - New Rules.mp3", "music/Dua Lipa - One Kiss.mp3", "music/Estopa - La Raja de Tu Falda.mp3", "music/Halsey - Without Me.mp3", "music/Imagine Dragons - Natural.mp3", "music/Maldita Nerea - No Pide Tanto, Idiota.mp3", "music/Queen - I Want To Break Free.mp3","music/ROSALÍA - MALAMENTE (Cap.1 Augurio).mp3", "music/Shawn Mendes - There_s Nothing Holdin_ Me Back.mp3"];
 
-  var nombrecancion=["Pa Llamar Tu Atención","Sueño Contigo","New Rules", "One Kiss", "La Raja de Tu Falda", "Without Me", "Natural","No Pide Tanto, Idiota", "I Want To Break Free", "ROSALÍA - MALAMENTE (Cap.1 Augurio)", "There's Nothing Holdin' Me Back"];
-
-
-var nombre=document.getElementById("info");
-
-  var adelante= document.getElementsByClassName('fwd');
-  var atrás= document.getElementsByClassName('bck');
-
-function adelante(){
-  cancion++;
-  reproduint.src=cancion[1];
-  reproduint.play();
-  nombrecancion.textContent=cancion[0];
-}
-
-var nombrecancion=document.getElementById('info');
+    var nombrecancion=["Pa Llamar Tu Atención","Sueño Contigo","New Rules", "One Kiss", "La Raja de Tu Falda", "Without Me", "Natural","No Pide Tanto, Idiota", "I Want To Break Free", "ROSALÍA - MALAMENTE (Cap.1 Augurio)", "There's Nothing Holdin' Me Back"];
 
 
- function song1(){
-   document.getElementById('nombrecancion').src=cancion[0].src;
- }
- function song2(){
-   document.getElementById('nombrecancion').src=nombre[1].src;
- }
- function song3(){
-   document.getElementById('nombrecancion').src=nombre[2].src;
- }
- function song4(){
-   document.getElementById('nombrecancion').src=nombre[3].src;
- }
+  var nombre=document.getElementById("info");
 
- nombre[0].addEventListener('click',song1);
- nombre[1].addEventListener('click',song2);
- nombre[2].addEventListener('click',song3);
- nombre[3].addEventListener('click',song4);
+    var adelante= document.getElementsByClassName('fwd');
+    var atrás= document.getElementsByClassName('bck');
+
+  function adelante(){
+    cancion++;
+    reproduint.src=cancion[1];
+    reproduint.play();
+    nombrecancion.textContent=cancion[0];
+  }
+
+  var nombrecancion=document.getElementById('info');
+
+
+   function song1(){
+     document.getElementById('nombrecancion').src=cancion[0].src;
+   }
+   function song2(){
+     document.getElementById('nombrecancion').src=nombre[1].src;
+   }
+   function song3(){
+     document.getElementById('nombrecancion').src=nombre[2].src;
+   }
+   function song4(){
+     document.getElementById('nombrecancion').src=nombre[3].src;
+   }
+
+   nombre[0].addEventListener('click',song1);
+   nombre[1].addEventListener('click',song2);
+   nombre[2].addEventListener('click',song3);
+   nombre[3].addEventListener('click',song4);
 
 </script>
+
 </head>
+
 <body>
 
-
-      <div id="buscador">
-        <input id="search" type="text" placeholder="Buscar">
-        </div>
-
-
-      <a id="salir" href="playlists.html"> <img src="img/salir.png"> </a>
+  <a id="salir" href="playlists.html"> <img src="img/salir.png"></a>
 
   <div id="contenidor">
       <div class="cover">
 
       </div>
+
       <div class="info">
       </div>
-      <div id="carril"></div>
-      <audio id="reproduint" width="500" height="40" autoplay src="music/Halsey - Without Me.mp3" type="audio/mp3"></audio>
+
+      <div id="carril">
+      </div>
+
+      <audio id="reproduint" width="500" height="40" autoplay src="music/Halsey - Without Me.mp3" type="audio/mp3">
+      </audio>
+
       <input id="barra" type="range" min="0" max="1000" value="0" step="1">
+
       <div class="botons">
         <button class="bck"></button>
         <button id="playpause"></button>
         <button class="fwd"></button>
       </div>
+
     </div>
 
 </body>
