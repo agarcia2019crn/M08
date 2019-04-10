@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Current Track</title>
+<link rel="shortcut icon" href="img/choice.ico">
+<style>
+
+/* 1---------- Controlador -------------*/
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background:transparent;
+    position: relative;
+    margin:0;
+  }
+
+  input[type=range]:focus {
+    outline:none;
+  }
+
+/* 1.1---------- Carril -------------*/
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    cursor:pointer;
+  }
+
+/* 1.2---------- Controlador -------------*/
+input[type=range]::-webkit-slider-thumb{
+-webkit-appearance: none;
+height: 20px;
+width: 20px;
+background-color: white;
+border-radius: 50%;
+cursor:pointer;
+z-index: 3;
+}
+
+input[type=range]::-webkit-slider-thumb:hover{
+background-color: #56494E;
+}
+
+input[type=range]::-webkit-slider-thumb:active{
+background-color: #5A5353;
+}
+
+body {
+    text-align: center;
+      background-color: black;
+
+    }
+
+    #contenidor {
+      margin-left: 560px;
+      width: 800px;
+      height: 720px;
+      padding: 20px;
+      background: black;
+    }
+
+    .cover {
+      width: 500px;
+      height: 500px;
+      margin-left: 150px;
+      background-color: blue;
+      background-size: cover;
+      background-image: url("img/halsey.png");
+      background-repeat: no-repeat;
+    }
+
+    .info {
+      width: 500px;
+      height: 80px;
+        margin-left: 150px;
+        margin-top: 20px;
+        padding-top: 10px;
+
+      font-size: 40px;
+      color: white;
+      font-family: helvetica, sans-serif;
+    }
+    /* --------------- Tiradors ----------------- */
+
+    input[type=range] {
+      -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+      width: 100%; /* Firefox necessita una amplada específica */
+      background: transparent;  /* Amaga el tirador per fer la màgia */
+      background: rgba(255,255,255, 0.2);
+      margin: 0.0px 0;
+      border-radius: 10px;
+      margin: 20px auto;
+    }
+    input[type=range]:focus {
+      outline: none; /* Per no veure el contorn */
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      background: #4c4d4d;
+      border-radius: 10px;
+      border: 0px solid #010101;
+    }
+
+    /* Controlador */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      border-radius: 10px;
+      background: rgba(255,255,255, 0.3);
+      cursor: pointer;
+			position: relative;
+      margin-top: -0.0px;
+
+      box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+      border: 0px solid #ff1e00;
+    }
+
+    /*  opcional  */
+    /*
+    input[type=range]:focus::-webkit-slider-runnable-track {
+      background: red;
+      border-radius: 10px;
+    }
+    */
+
+
+    /* --------------- Botons ----------------- */
+
+    #playpause {
+      position:relative;
+      border:none;
+      text-decoration:none;
+      width: 100px;
+      height: 100px;
+      background: #4c4d4d;
+      border-radius: 50px;
+    }
+
+    #playpause:focus {
+      outline: none; /* Per no veure el contorn */
+    }
+    #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+      position: absolute;
+      content: " ";
+      z-index: 1000;
+    }
+    #playpause:before, #playpause:after {
+      height: 47px;
+      width: 19px;
+      left: 29px;
+      top: 28px;
+      display: block;
+      background: white;
+    }
+
+    #playpause:after {
+     left: 54px;
+    }
+
+    #playpause:focus:before {
+      top: 28px;
+      left: 34px;
+      width: 0;
+      height: 0;
+      border-left: 47px solid white;
+      border-right: 24px solid transparent;
+      border-bottom: 24px solid transparent;
+      border-top: 24px solid transparent;
+      display: block;
+      background: transparent;
+    }
+
+    #playpause:focus:after {
+     visibility:hidden;
+    }
+
+    #search {
+      background-color: white;
+      width: 270px;
+      margin-left: 160px;
+      border-radius: 25px;
+      outline: 0;
+      padding-left: 25px;
+      color: #CEA97F;
+    }
+
+      #buscador {
+        height: 20px;
+        width: 300px;
+        border-radius: 25px;
+        top: 10px;
+        left: 1310px;
+        right: 0;
+        z-index: 499;
+        position: relative;
+        opacity: transparent;
+        }
+
+      #buscar {
+        font-family: helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 20px;
+      }
+
+    #salir {
+      margin-left: -1720px;
+    }
+
+    #track {
+      background-color: #CEA97F;
+      width: 450px;
+      height: 450px;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 120px;
+    }
+
+    .bck {
+      background-image: url("img/back.png");
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      border-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 20px;
+
+    }
+
+    .fwd {
+      background-image: url("img/fwd.png");
+      width: 50px;
+      height: 50px;
+      background-color: transparent;
+      border-color: transparent;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: 20px;
+
+    }
+
+
+
+</style>
+
+<script>
+/* --------------- Js ----------------- */
+
+    var reproduint, playpause, barra;
+    var vesa, noutemps;
+
+    function inicialitzaReproductor() {
+      reproduint = document.getElementById("reproduint");
+      playpause = document.getElementById("playpause");
+      barra = document.getElementById("barra");
+
+      playpause.addEventListener("click", playPause, false);
+      barra.addEventListener("change", posicioAudio, false);
+      reproduint.addEventListener("timeupdate", actualitzaTemps, false);
+
+      playpause.focus();
+    }
+
+    window.onload = inicialitzaReproductor;
+
+    function playPause() {
+      if(reproduint.paused) {
+        reproduint.play();
+        playpause.blur();
+      }
+      else {
+        reproduint.pause();
+        playpause.focus();
+      }
+    }
+
+
+    function posicioAudio() {
+      var vesa = parseInt(reproduint.duration * (barra.value / 1000));
+      reproduint.currentTime = vesa;
+      console.log(reproduint.currentTime);
+    }
+
+
+    function actualitzaTemps() {
+      var noutemps = parseInt(reproduint.currentTime * (1000 / reproduint.duration));
+      barra.value = noutemps;
+      console.log(barra.value);
+    }
+
+  var cancion=["music/C. Tangana - Pa_ Llamar Tu Atención.mp3","music/Camela - Sueño contigo.mp3", "music/Dua Lipa - New Rules.mp3", "music/Dua Lipa - One Kiss.mp3", "music/Estopa - La Raja de Tu Falda.mp3", "music/Halsey - Without Me.mp3", "music/Imagine Dragons - Natural.mp3", "music/Maldita Nerea - No Pide Tanto, Idiota.mp3", "music/Queen - I Want To Break Free.mp3","music/ROSALÍA - MALAMENTE (Cap.1 Augurio).mp3", "music/Shawn Mendes - There_s Nothing Holdin_ Me Back.mp3"];
+
+  var nombrecancion=["Pa Llamar Tu Atención","Sueño Contigo","New Rules", "One Kiss", "La Raja de Tu Falda", "Without Me", "Natural","No Pide Tanto, Idiota", "I Want To Break Free", "ROSALÍA - MALAMENTE (Cap.1 Augurio)", "There's Nothing Holdin' Me Back"];
+
+
+var nombre=document.getElementById("info");
+
+  var adelante= document.getElementsByClassName('fwd');
+  var atrás= document.getElementsByClassName('bck');
+
+function adelante(){
+  cancion++;
+  reproduint.src=cancion[1];
+  reproduint.play();
+  nombrecancion.textContent=cancion[0];
+}
+
+var nombrecancion=document.getElementById('info');
+
+
+ function song1(){
+   document.getElementById('nombrecancion').src=cancion[0].src;
+ }
+ function song2(){
+   document.getElementById('nombrecancion').src=nombre[1].src;
+ }
+ function song3(){
+   document.getElementById('nombrecancion').src=nombre[2].src;
+ }
+ function song4(){
+   document.getElementById('nombrecancion').src=nombre[3].src;
+ }
+
+ nombre[0].addEventListener('click',song1);
+ nombre[1].addEventListener('click',song2);
+ nombre[2].addEventListener('click',song3);
+ nombre[3].addEventListener('click',song4);
+
+</script>
+</head>
+<body>
+
+
+      <div id="buscador">
+        <input id="search" type="text" placeholder="Buscar">
+        </div>
+
+
+      <a id="salir" href="playlists.html"> <img src="img/salir.png"> </a>
+
+  <div id="contenidor">
+      <div class="cover">
+
+      </div>
+      <div class="info">
+      </div>
+      <div id="carril"></div>
+      <audio id="reproduint" width="500" height="40" autoplay src="music/Halsey - Without Me.mp3" type="audio/mp3"></audio>
+      <input id="barra" type="range" min="0" max="1000" value="0" step="1">
+      <div class="botons">
+        <button class="bck"></button>
+        <button id="playpause"></button>
+        <button class="fwd"></button>
+      </div>
+    </div>
+
+</body>
+</html>

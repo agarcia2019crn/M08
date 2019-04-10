@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style>
+
+body {
+  background-color: #333333;
+}
+/* 1---------- Controlador -------------*/
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background:transparent;
+    position: relative;
+    margin:0;
+  }
+
+  input[type=range]:focus {
+    outline:none;
+  }
+
+/* 1.1---------- Carril -------------*/
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    cursor:pointer;
+  }
+
+/* 1.2---------- Controlador -------------*/
+input[type=range]::-webkit-slider-thumb{
+-webkit-appearance: none;
+height: 20px;
+width: 20px;
+background-color: white;
+border-radius: 50%;
+cursor:pointer;
+z-index: 3;
+}
+
+input[type=range]::-webkit-slider-thumb:hover{
+background-color: #56494E;
+}
+
+input[type=range]::-webkit-slider-thumb:active{
+background-color: #5A5353;
+}
+
+  .fake {
+    width: 10%;
+    height: 20px;
+    position: relative;
+    background:red;
+    margin: 0;
+    top: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    background: #CDA87F;
+  }
+
+
+.playpause{
+  border-radius: none;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  background-color: #CDA87F;
+  border-radius: 50%;
+  position: relative;
+}
+
+.playpause:focus{
+  outline:none;
+  position: relative;
+}
+
+.playpause::before, .playpause::after{
+  content: " ";
+  display: block;
+  height: 47px;
+  width: 19px;
+  left: 26px;
+  top: 28px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  z-index: 200000;
+}
+
+.playpause::after{
+left: 54px;
+}
+
+.playpause:focus:before, .playpause:focus:after{
+ content: " ";
+ display: block;
+ height: 47px;
+ width: 19px;
+ left: 26px;
+ top: 28px;
+ background-color: white;
+ color: black;
+ position: absolute;
+ z-index: 200000;
+}
+
+.playpause:focus:after{
+ visibility: hidden;
+}
+
+.playpause:focus::before {
+ height: 0px;
+ width: 0px;
+ background: transparent;
+ border-top: solid transparent 20px;
+
+ height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border-top: solid transparent 20px;
+    border-left: solid white 40px;
+    border-right: solid transparent 20px;
+    border-bottom: solid transparent 20px;
+    top: 30px;
+    left: 35px;height: 0px;
+    width: 0px;
+    background-color: transparent;
+    border-top: solid transparent 20px;
+    border-left: solid white 40px;
+    border-right: solid transparent 20px;
+    border-bottom: solid transparent 20px;
+    top: 30px;
+    left: 35px;
+
+}
+
+</style>
+</head>
+<body>
+<div class="fake"></div>
+<input id="controlador" type="range" value="100">
+
+<button class="bck"> </button>
+ <button class="playpause" type="button"></button>
+<button class="fwd"> </button>
+
+</body>
+</html>
